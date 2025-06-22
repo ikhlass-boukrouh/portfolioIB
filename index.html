@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <title>Dr. Ikhlass BOUKROUH - AI Researcher</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Add EmailJS SDK -->
+       <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" 
+  ></script>
+
+  <!-- Initialize EmailJS using Public Key -->
+  <script>
+    (function () {
+      // Replace with your actual EmailJS Public Key
+      emailjs.init("MtYAZ9L8ukr4_WpGw");
+    })();
+  </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <span>Dr. Ikhlass</span>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li>
+              <a href="#" onclick="showContent('home-section')" class="active"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="#" onclick="showContent('about-section')">About</a>
+            </li>
+            <li>
+              <a href="#" onclick="showContent('skills-section')">Skills</a>
+            </li>
+            <li>
+              <a href="#" onclick="showContent('research-section')">Research</a>
+            </li>
+            <li>
+              <a href="#" onclick="showContent('courses-section')">Courses</a>
+            </li>
+            <li>
+              <a
+                href="#"
+                onclick="showContent('contact-section')"
+                class="contact-btn"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="settings">
+          <button id="theme-toggle" aria-label="Toggle dark mode">
+            <span class="toggle-icon">🌓</span>
+          </button>
+        </div>
+        <div class="mobile-menu-btn">
+          <i class="fa-solid fa-bars" id="menu-open"></i>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-menu">
+      <div class="mobile-menu-header">
+        <div class="logo"><span>Dr. Ikhlass</span></div>
+        <i class="fa-solid fa-xmark" id="menu-close"></i>
+      </div>
+      <ul class="mobile-nav-links">
+        <li>
+          <a href="#" onclick="showContent('home-section'); closeMobileMenu()"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a href="#" onclick="showContent('about-section'); closeMobileMenu()"
+            >About</a
+          >
+        </li>
+        <li>
+          <a href="#" onclick="showContent('skills-section'); closeMobileMenu()"
+            >Skills</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            onclick="showContent('research-section'); closeMobileMenu()"
+            >Research</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            onclick="showContent('courses-section'); closeMobileMenu()"
+            >Courses</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            onclick="showContent('contact-section'); closeMobileMenu()"
+            >Contact Us</a
+          >
+        </li>
+      </ul>
+      <div class="mobile-settings">
+        <button id="mobile-theme-toggle" aria-label="Toggle dark mode">
+          <span class="toggle-icon">🌓</span>
+        </button>
+      </div>
+    </div>
+
+    <main>
+      <section id="home-section" class="section active">
+        
+        <div class="container">
+          <div class="home-content">
+            
+            <div class="text-content">
+              <h1 id="greeting">Hey I'm <span>Dr. Ikhlass BOUKROUH</span></h1>
+              <div class="typewriter" id="role-text">I'm a <span></span></div>
+              <p id="bio-text" style="text-align: justify">
+                Postdoctoral researcher in Data Science, holding a PhD in Artificial Intelligence.I teach at multiple academic levels and lead workshops to help students build strong practical skills. I develop innovative hybrid algorithms and contribute actively to the scientific community through international publications, peer reviews, and research supervision.
+              </p>
+              <div class="social-links">
+
+
+                <!-- LinkedIn -->
+                <a
+                  href="https://www.linkedin.com/in/ikhlass-boukrouh "
+                  target="_blank"
+                  aria-label="LinkedIn"
+                >
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <!-- ResearchGate -->
+                <a
+                  href="https://www.researchgate.net/profile/Ikhlass-Boukrouh"
+                  target="_blank"
+                  aria-label="ResearchGate"
+                >
+                  <i class="fa-brands fa-researchgate"></i>
+                </a>
+
+                <!-- ORCID -->
+                <a
+                  href="https://orcid.org/0009-0009-6745-9207"
+                  target="_blank"
+                  aria-label="ORCID"
+                >
+                  <i class="fa-brands fa-orcid"></i>
+                </a>
+
+                <!-- Google Scholar -->
+                <a
+                  href="https://scholar.google.com/citations?user=5-9t3DMAAAAJ&hl=fr&oi=sra"
+                  target="_blank"
+                  aria-label="Google Scholar"
+                >
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </a>
+              </div>
+
+              
+            </div>
+            <div class="image-content">
+            <div class="image-blur-box">
+  <img src="cv-background.jpg" alt="Blurred CV Image" class="blurred-image" />
+  <a href="CV_Ikhlass_BOUKROUH.pdf" download class="download-btn">Download CV</a>
+</div>
+        </div>
+      </section>
+
+      <section id="about-section" class="section">
+        <div class="container">
+          <h2 id="about-title">About <span>Me</span></h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p id="about-text" style="text-align: justify">
+                I defended my PhD in Artificial Intelligence at Abdelmalek Essaâdi University (Faculty of Sciences and Technologies, Tangier) in December 2024.
+                
+              </p>
+              <p style="text-align: justify">
+                My research focuses on hybrid AI models, machine learning, and intelligent optimization applied to real-world problems. With a solid background in mathematics, statistics, and computer
+                science, I approach AI challenges from multidisciplinary
+                perspectives. 
+              </p>
+              <p style="text-align: justify">
+              I have published over 20 scientific works, including journal articles and conference papers, and actively contribute to international conferences as a presenter, reviewer, and member of organizing committees.
+              </p>
+              <p style="text-align: justify">
+
+              Alongside my research activities, I have taught tutorials, laboratory sessions, and applied workshops for students at various academic levels, including undergraduate, Bachelor’s, Master's, and doctoral programs. I have also co-supervised final-year projects for both Bachelor’s and Master’s students.
+                            </p>
+
+              <p style="text-align: justify">
+                I am currently a postdoctoral researcher pursuing advanced studies and applications in Artificial Intelligence.
+              </p>
+              <div class="education">
+                <h3>Education</h3>
+                <ul>
+                  <li>
+                    <span class="degree"
+                      >PhD in Artificial Intelligence 
+                    </span>
+                    <span class="faculty"
+                      >Faculty of Sciences and Technologies of Tangier</span
+                    >
+                    <span class="university"
+                      >Abdelmalek Essaâdi University of Morocco</span
+                    >
+                    <span class="year">2021 - 2024 </span>
+                  </li>
+                  <li>
+                    <span class="degree"
+                      >Master's in Applied Analysis and Statistical
+                      Engineering</span
+                    >
+                    <span class="faculty"
+                      >Faculty of Sciences and Technologies of Tangier</span
+                    >
+                    <span class="university"
+                      >Abdelmalek Essaâdi University of Morocco</span
+                    >
+                    <span class="year">2019 - 2021 </span>
+                  </li>
+                  <li>
+                    <span class="degree"
+                      >Bachelor's in Mathematics and Applications</span
+                    >
+                    <span class="faculty"
+                      >Faculty of Sciences and Technologies of Tangier</span
+                    >
+                    <span class="university"
+                      >Abdelmalek Essaâdi University of Morocco</span
+                    >
+                    <span class="year">2018 - 2019 </span>
+                  </li>
+                  <li>
+                    <span class="degree"
+                      >University Diploma in Science and Technology</span
+                    >
+                    <span class="faculty"
+                      >Faculty of Sciences and Technologies of Tangier</span
+                    >
+                    <span class="university"
+                      >Abdelmalek Essaâdi University of Morocco</span
+                    >
+                    <span class="year">2016 - 2019 </span>
+                  </li>
+                  <li>
+                    <span class="degree"
+                      >Baccalaureate in Science Mathematics A - French option</span
+                    >
+                    <span class="faculty"
+                      >Ibn Battouta High School, Tangier</span
+                    >
+                    <span class="year">2015 - 2016 </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills-section" class="section">
+        <div class="container">
+          <h2 id="skills-title">My <span>Skills</span></h2>
+
+          <div class="skills-content">
+            <!-- First row: Two categories side by side -->
+            <div class="skills-row">
+              <!-- AI Modeling Category -->
+              <div class="skill-category-container">
+                <div
+                  class="skill-category-summary toggle-details-updated"
+                  id="ai-modeling-toggle"
+                >
+                  <div>
+                    <h3>Artificial Intelligence Modeling</h3>
+                    <!-- <p class="category-description">Show more</p> -->
+                  </div>
+                  <div class="toggle-icon">
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </div>
+                </div>
+
+                <div class="skill-details-container" id="ai-modeling-details">
+                  <ul class="skills-list">
+                    <li>Supervised models</li>
+                    <li>Clustering and dimensionality reduction</li>
+                    <li>Deep learning approaches</li>
+                    <li>Probabilistic modeling (Bayesian networks)</li>
+                    <li>Explainable Artificial Intelligence (XAI)</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Statistical Analysis Category -->
+              <div class="skill-category-container">
+                <div
+                  class="skill-category-summary toggle-details-updated"
+                  id="statistical-analysis-toggle"
+                >
+                  <div>
+                    <h3>Statistical Analysis and Data Processing</h3>
+                    <!-- <p class="category-description">Show more</p> -->
+                  </div>
+                  <div class="toggle-icon">
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </div>
+                </div>
+
+                <div
+                  class="skill-details-container"
+                  id="statistical-analysis-details"
+                >
+                  <ul class="skills-list">
+                    <li>Descriptive and inferential statistics</li>
+                    <li>Multivariate and time series analysis</li>
+                    <li>
+                      Exploratory Data Analysis: visualization, summary
+                      statistics, outlier detection
+                    </li>
+                    <li>
+                      Data preprocessing: handling missing values,
+                      normalization, data transformation
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Second row: Two categories side by side -->
+            <div class="skills-row">
+              <!-- Tools and Programming Category -->
+              <div class="skill-category-container">
+                <div
+                  class="skill-category-summary toggle-details-updated"
+                  id="tools-programming-toggle"
+                >
+                  <div>
+                    <h3>Tools and Programming Languages</h3>
+                    <!-- <p class="category-description">Show more</p> -->
+                  </div>
+                  <div class="toggle-icon">
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </div>
+                </div>
+
+                <div
+                  class="skill-details-container"
+                  id="tools-programming-details"
+                >
+                  <ul class="skills-list">
+                    <li>Languages: Python, R, MATLAB</li>
+                    <li>
+                      Libraries: Pandas, NumPy, Matplotlib, Seaborn,
+                      Scikit-learn, TensorFlow, Keras
+                    </li>
+                    <li>Environments: Jupyter, Google Colab, Git</li>
+                    <li>Applied Modeling Tools: Open Markov, FisPro</li>
+                    <li>Scientific writing and design: LaTeX, Canva, Figma</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Academic & Editorial Category -->
+              <div class="skill-category-container">
+                <div
+                  class="skill-category-summary toggle-details-updated"
+                  id="academic-editorial-toggle"
+                >
+                  <div>
+                    <h3>Academic & Editorial</h3>
+                    <!-- <p class="category-description">Show more</p> -->
+                  </div>
+                  <div class="toggle-icon">
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </div>
+                </div>
+
+                <div
+                  class="skill-details-container"
+                  id="academic-editorial-details"
+                >
+                  <ul class="skills-list">
+                    <li>Design of course materials and pedagogical content</li>
+                    <li>Supervision of research projects</li>
+                    <li>
+                      Participation in scientific committees and peer review
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Third row: One category full width -->
+            <div class="skills-row full-width">
+              <!-- Languages Category -->
+              <div class="skill-category-container">
+                <div
+                  class="skill-category-summary toggle-details-updated"
+                  id="languages-toggle"
+                >
+                  <div>
+                    <h3>Languages</h3>
+                    <!-- <p class="category-description">Show more</p> -->
+                  </div>
+                  <div class="toggle-icon">
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </div>
+                </div>
+
+                <div class="skill-details-container" id="languages-details">
+                  <ul class="skills-list">
+                    <li>French: Fluent</li>
+                    <li>English: Intermediate</li>
+                    <li>Spanish: A2</li>
+                    <li>Arabic: Native</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="research-section" class="section">
+        <div class="container">
+          <h2 id="research-title">My <span>Research</span></h2>
+          <div class="research-grid">
+            <a href="postdoctorat.html" class="research-card clickable-card">
+              <div class="research-icon"><i class="fa-solid fa-flask"></i></div>
+              <h3 id="postdoc-title">Postdoctoral Research</h3>
+            </a>
+
+            <a href="publications.html" class="research-card clickable-card">
+              <div class="research-icon"><i class="fa-solid fa-book"></i></div>
+              <h3 id="publications-title">Peer-Reviewed Publications</h3>
+            </a>
+
+            <a  style="height: auto;" href="conferences.html" class="research-card clickable-card">
+              <div class="research-icon">
+                <i class="fa-solid fa-microphone"></i>
+              </div>
+              <h3 id="presentations-title">International Communications</h3>
+            </a>
+
+            <a
+              href="scientificactivities.html"
+              class="research-card clickable-card"
+              style="height: auto;"
+            >
+              <div class="research-icon">
+                <i class="fa-solid fa-clipboard-check"></i>
+              </div>
+              <h3 id="activities-title">Scientific Activities</h3>
+
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="courses-section" class="section">
+        <div class="container">
+          <h2 id="courses-title" data-aos="fade-up">My <span>Courses</span></h2>
+
+          <div
+            class="courses-container"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="courses-header">
+              <div class="courses-icon">
+                <i class="fa-solid fa-chalkboard-user"></i>
+              </div>
+              <h3>Educational Content Coming Soon</h3>
+ 
+            </div>
+
+            <div class="courses-preview">
+              <div class="course-card">
+                <div class="course-icon">
+                  <i class="fa-solid fa-magnifying-glass-chart"></i>
+                </div>
+                <h4>Mathematics for Data Science</h4>
+                <div class="course-details">
+                  <span class="course-level"
+                    ><i class="fa-solid fa-signal"></i> Beginner to
+                    Intermediate</span
+                  >
+                  <span class="course-duration"
+                    ><i class="fa-regular fa-clock"></i> 20 hours</span
+                  >
+                </div>
+                <p style="text-align: justify">
+                  Introduction to statistical analysis for data science, focusing on univariate, bivariate, and multivariate techniques, hypothesis testing, and implementation in R and Python.
+                </p>
+                <div class="course-status"> <i class="fa-solid fa-clock"></i> Coming Soon </div>
+              </div>
+ 
+              <div class="course-card">
+                <div class="course-icon">
+                  <i class="fa-solid fa-database"></i>
+                </div>
+                <h4>Data Preparation and Exploration with Python</h4>
+                <div class="course-details">
+                  <span class="course-level"
+                    ><i class="fa-solid fa-signal"></i> Beginner</span
+                  >
+                  <span class="course-duration"
+                    ><i class="fa-regular fa-clock"></i> 15 hours</span
+                  >
+                </div>
+                <p style="text-align: justify">
+                  Provides a complete overview of data preprocessing and exploratory analysis techniques in Python. Focus on preparing structured datasets and extracting insights through graphical and statistical exploration.
+
+                </p>
+                <div class="course-status"> <i class="fa-solid fa-clock"></i> Coming Soon </div>
+              </div>
+
+              <div class="course-card">
+                <div class="course-icon">
+                  <i class="fa-solid fa-brain"></i>
+                </div>
+                <h4>Fundamentals of Machine Learning</h4>
+                <div class="course-details">
+                  <span class="course-level"
+                    ><i class="fa-solid fa-signal"></i> Beginner to Intermediate</span
+                  >
+                  <span class="course-duration"
+                    ><i class="fa-regular fa-clock"></i> 14 hours</span
+                  >
+                </div>
+                <p style="text-align: justify">
+                  Key concepts in supervised and unsupervised learning. Focus on algorithms like regression, classification, and clustering, with practical implementation in Python using Scikit-learn.
+                </p>
+                <div class="course-status"> <i class="fa-solid fa-clock"></i> Coming Soon </div>
+              </div>
+
+                <div class="course-card">
+                <div class="course-icon">
+                  <i class="fa-solid fa-project-diagram"></i>
+                </div>
+                <h4>Uncertainty Modeling with fuzzy Bayesian Networks </h4>
+                <div class="course-details">
+                  <span class="course-level"
+                    ><i class="fa-solid fa-signal"></i> Intermediate</span
+                  >
+                  <span class="course-duration"
+                    ><i class="fa-regular fa-clock"></i> 16 hours</span
+                  >
+                </div>
+                <p style="text-align: justify">
+Focus on uncertainty modeling with Bayesian networks and fuzzy logic using OpenMarkov, GeNIe Academic, MATLAB, and FISPro.                </p>
+                <div class="course-status"> <i class="fa-solid fa-clock"></i> Coming Soon </div>
+              </div>
+
+                
+              <div class="course-card">
+                <div class="course-icon">
+                  <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h4>Introduction to Bibliometric Analysis with Biblioshiny</h4>
+                <div class="course-details">
+                  <span class="course-level"
+                    ><i class="fa-solid fa-signal"></i> Beginner</span
+                  >
+                  <span class="course-duration"
+                    ><i class="fa-regular fa-clock"></i> 8 hours</span
+                  >
+                </div>
+                <p style="text-align: justify">
+                  Learn how to analyze and visualize scientific literature using Biblioshiny (R interface for bibliometrix)
+                </p>
+                <div class="course-status"> <i class="fa-solid fa-clock"></i> Coming Soon </div>
+              </div>
+                <div class="course-card">
+                <div class="course-icon">
+                  <i class="fa-solid fa-book"></i>
+                </div>
+                <h4>Reference Management Tools: Zotero</h4>
+                <div class="course-details">
+                  <span class="course-level"
+                    ><i class="fa-solid fa-signal"></i> Beginner</span
+                  >
+                  <span class="course-duration"
+                    ><i class="fa-regular fa-clock"></i> 4 hours</span
+                  >
+                </div>
+                <p style="text-align: justify">
+                  Introduction to Zotero for collecting, organizing, and citing academic references.
+                </p>
+                <div class="course-status"> <i class="fa-solid fa-clock"></i> Coming Soon </div>
+              </div>
+            </div>
+            </div>
+            
+            </div>
+            
+            </div>
+            
+
+            <div
+              class="notification-container"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="notification-content">
+                <h4><i class="fa-solid fa-bell"></i> Stay Updated</h4>
+                <p>
+                  Be the first to know when new courses are available. Subscribe
+                  to receive notifications about course launches and special
+                  offers.
+                </p>
+
+                <button
+                  id="notifyButton"
+                  class="notify-button"
+                  onclick="showForm()"
+                >
+                  Get Notified
+                </button>
+
+                <div id="notifyContainer" class="notify-form-container">
+                  <form id="notifyForm" onsubmit="submitCourseForm(event)">
+                    <div class="form-row">
+                      <div class="form-group">
+                        <label for="name"
+                          ><i class="fa-solid fa-user"></i> Your Name</label
+                        >
+                        <input
+                          type="text"
+                          id="name"
+                          placeholder="Enter your name"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="email"
+                          ><i class="fa-solid fa-envelope"></i> Your
+                          Email</label
+                        >
+                        <input
+                          type="email"
+                          id="email"
+                          placeholder="Enter your email"
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <button type="submit" class="submit-button">
+                      <i class="fa-solid fa-paper-plane"></i> Subscribe
+                    </button>
+                  </form>
+                  <div
+                    id="notify-success-message"
+                    class="form-message success-message"
+                  >
+                    <i class="fa-solid fa-check-circle"></i> Thank you for
+                    subscribing! You'll be notified about new courses.
+                  </div>
+                  <div
+                    id="notify-error-message"
+                    class="form-message error-message"
+                  >
+                    <i class="fa-solid fa-exclamation-circle"></i> There was an
+                    error sending your request. Please try again.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact-section" class="section">
+        <div class="container">
+          <h2 id="contact-title" data-aos="fade-up">Contact <span>Me</span></h2>
+
+          <div class="contact-wrapper" data-aos="fade-up" data-aos-delay="100">
+            <div class="contact-info-container">
+              <div class="contact-info-header">
+                <h3><i class="fa-solid fa-address-card"></i> Get in Touch</h3>
+                <p>
+                  Feel free to reach out for collaborations, research
+                  opportunities, or any inquiries.
+                </p>
+              </div>
+
+              <div class="contact-info-cards">
+                <div class="contact-card">
+                  <div class="contact-card-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="contact-card-content">
+                    <h4>Email</h4>
+                    <p>
+                      <a href="mailto:boukrouh.ikhlass@gmail.com"
+                        >boukrouh.ikhlass@gmail.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+
+                <div class="contact-card">
+                  <div class="contact-card-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="contact-card-content">
+                    <h4>Location</h4>
+                    <p>Tangier, Morocco</p>
+                  </div>
+                </div>
+
+                <div class="contact-card">
+                  <div class="contact-card-icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </div>
+                  <div class="contact-card-content">
+                    <h4>LinkedIn</h4>
+                    <p>
+                      <a
+                        href="https://www.linkedin.com/in/ikhlass-boukrouh"
+                        target="_blank"
+                        >linkedin.com/in/ikhlassboukrouh</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-social">
+                <h4>Connect with me</h4>
+                <div class="social-icons">
+
+                  <a
+                    href="https://www.researchgate.net/profile/Ikhlass-Boukrouh"
+                    target="_blank"
+                    aria-label="ResearchGate"
+                  >
+                    <i class="fa-brands fa-researchgate"></i>
+                  </a>
+                  <a
+                    href="https://orcid.org/0009-0009-6745-9207"
+                    target="_blank"
+                    aria-label="ORCID"
+                  >
+                    <i class="fa-brands fa-orcid"></i>
+                  </a>
+                  <a
+                    href="https://scholar.google.com/citations?user=5-9t3DMAAAAJ&hl=fr&oi=sra"
+                    target="_blank"
+                    aria-label="Google Scholar"
+                  >
+                    <i class="fa-solid fa-graduation-cap"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="contact-form-container"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <form id="contact-form" onsubmit="sendEmail(event)">
+                <h3><i class="fa-solid fa-paper-plane"></i> Send a Message</h3>
+
+                <div class="form-group">
+                  <label for="contact-name"
+                    ><i class="fa-solid fa-user"></i> Your Name</label
+                  >
+                  <input
+                    type="text"
+                    id="contact-name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email"
+                    ><i class="fa-solid fa-envelope"></i> Your Email</label
+                  >
+                  <input
+                    type="email"
+                    id="contact-email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-subject"
+                    ><i class="fa-solid fa-tag"></i> Subject</label
+                  >
+                  <input
+                    type="text"
+                    id="contact-subject"
+                    name="subject"
+                    placeholder="Enter message subject"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-message"
+                    ><i class="fa-solid fa-message"></i> Your Message</label
+                  >
+                  <textarea
+                    id="contact-message"
+                    name="message"
+                    placeholder="Type your message here..."
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" id="submit-button">
+                  <i class="fa-solid fa-paper-plane"></i> Send Message
+                </button>
+              </form>
+              <div id="success-message" class="form-message success-message">
+                <i class="fa-solid fa-check-circle"></i> Your message has been
+                sent successfully! I'll get back to you soon.
+              </div>
+              <div id="error-message" class="form-message error-message">
+                <i class="fa-solid fa-exclamation-circle"></i> There was an
+                error sending your message. Please try again.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="copyright">
+            <p>&copy; 2025 Dr. Ikhlass BOUKROUH. All rights reserved.</p>
+          </div>
+          <div class="footer-social">
+
+
+            <!-- LinkedIn -->
+            <a
+              href="https://www.linkedin.com/in/ikhlass-boukrouh "
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <!-- ResearchGate -->
+            <a
+              href="https://www.researchgate.net/profile/Ikhlass-Boukrouh"
+              target="_blank"
+              aria-label="ResearchGate"
+            >
+              <i class="fa-brands fa-researchgate"></i>
+            </a>
+
+            <!-- ORCID -->
+            <a
+              href="https://orcid.org/0009-0009-6745-9207"
+              target="_blank"
+              aria-label="ORCID"
+            >
+              <i class="fa-brands fa-orcid"></i>
+            </a>
+
+            <!-- Google Scholar -->
+            <a
+              href="https://scholar.google.com/citations?user=5-9t3DMAAAAJ&hl=fr&oi=sra"
+              target="_blank"
+              aria-label="Google Scholar"
+            >
+              <i class="fa-solid fa-graduation-cap"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
+  <script>
+    AOS.init({ offset: 0, duration: 800, once: true });
+  </script>
+
+  <script>
+    function hamburg() {
+      const navbar = document.querySelector(".dropdown");
+      navbar.style.transform = "translateY(0px)";
+    }
+    function cancel() {
+      const navbar = document.querySelector(".dropdown");
+      navbar.style.transform = "translateY(-500px)";
+    }
+    function showContent(id) {
+      const sections = document.querySelectorAll(".section");
+      sections.forEach((sec) => sec.classList.remove("active"));
+      document.getElementById(id).classList.add("active");
+    }
+
+    // Function to send email from contact form
+    function sendEmail(event) {
+      event.preventDefault();
+
+      const name = document.getElementById("contact-name").value.trim();
+      const email = document.getElementById("contact-email").value.trim();
+      const subject = document.getElementById("contact-subject").value.trim();
+      const message = document.getElementById("contact-message").value.trim();
+
+      const submitButton = document.getElementById("submit-button");
+      const originalText = submitButton.innerHTML;
+
+      submitButton.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+      submitButton.disabled = true;
+
+      document.getElementById("success-message").style.display = "none";
+      document.getElementById("error-message").style.display = "none";
+
+      const templateParams = {
+        from_name: name,
+        from_email: email,
+        subject: subject,
+        message: message,
+      };
+
+      // Replace these with your own Service ID and Template ID
+      emailjs.send("service_f4rv0al", "template_kh7oc6s", templateParams, "MtYAZ9L8ukr4_WpGw" )
+        .then(
+          function (response) {
+            console.log("✅ SUCCESS!", response.status, response.text);
+            document.getElementById("success-message").style.display = "block";
+            document.getElementById("contact-form").reset();
+            submitButton.innerHTML = originalText;
+            submitButton.disabled = false;
+
+            setTimeout(() => {
+              document.getElementById("success-message").style.display = "none";
+            }, 5000);
+          },
+          function (error) {
+            console.error("❌ FAILED...", error);
+            document.getElementById("error-message").style.display = "block";
+            submitButton.innerHTML = originalText;
+            submitButton.disabled = false;
+          }
+        );
+    }
+
+    // Function to submit course notification form
+    function submitCourseForm(event) {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const interestCheckboxes = document.querySelectorAll('input[name="interests"]:checked');
+      const interests = Array.from(interestCheckboxes).map(cb => cb.value).join(", ") || "None selected";
+
+      const templateParams = {
+        from_name: name,
+        from_email: email,
+        interests: interests
+      };
+
+      emailjs.send("service_f4rv0al", "template_kh7oc6s", templateParams, "MtYAZ9L8ukr4_WpGw" )
+        .then(
+          function (response) {
+            document.getElementById("notify-success-message").style.display = "block";
+            document.getElementById("notifyForm").reset();
+            setTimeout(() => {
+              document.getElementById("notify-success-message").style.display = "none";
+            }, 5000);
+          },
+          function (error) {
+            document.getElementById("notify-error-message").style.display = "block";
+          }
+        );
+    }
+
+    function showForm() {
+      document.getElementById("notifyContainer").style.display = "block";
+    }
+  </script>
+
+  <!-- Fix for back navigation -->
+  <script>
+    window.addEventListener("load", function () {
+      const hash = window.location.hash;
+      if (hash) {
+        const sectionId = hash.substring(1);
+        const section = document.getElementById(sectionId);
+        if (section) showContent(sectionId);
+      }
+    });
+  </script>
+
+  <script src="script.js"></script>
+  </body>
+</html>
