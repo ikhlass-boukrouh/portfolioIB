@@ -2290,18 +2290,18 @@ button.loading i {
 /* Specific widths for each metric based on relative values */
 /* Scopus bars */
 .platform-card:nth-child(1) .metric-item:nth-child(1) .metric-progress { width: 69%; } /* 18/26 */
-.platform-card:nth-child(1) .metric-item:nth-child(2) .metric-progress { width: 30%; } /* 11/37 */
-.platform-card:nth-child(1) .metric-item:nth-child(3) .metric-progress { width: 33.33%; } /* 1/3 */
+.platform-card:nth-child(1) .metric-item:nth-child(2) .metric-progress { width: 30%; } /* 14/46 */
+.platform-card:nth-child(1) .metric-item:nth-child(3) .metric-progress { width: 33.33%; } /* 2/3 */
 
 /* Google Scholar bars */
 .platform-card:nth-child(2) .metric-item:nth-child(1) .metric-progress { width: 96%; } /* 25/ 26 */
-.platform-card:nth-child(2) .metric-item:nth-child(2) .metric-progress { width: 100%; } /* 37 is max */
+.platform-card:nth-child(2) .metric-item:nth-child(2) .metric-progress { width: 100%; } /* 46 is max */
 .platform-card:nth-child(2) .metric-item:nth-child(3) .metric-progress { width: 100%; } /* 3 is max */
 
 /* ResearchGate bars */
 .platform-card:nth-child(3) .metric-item:nth-child(1) .metric-progress { width: 100%; } /* 26 is max */
-.platform-card:nth-child(3) .metric-item:nth-child(2) .metric-progress { width: 76%; } /* 28/37 */
-.platform-card:nth-child(3) .metric-item:nth-child(3) .metric-progress { width: 33.33%; } /* 1/3 */
+.platform-card:nth-child(3) .metric-item:nth-child(2) .metric-progress { width: 76%; } /* 34/46 */
+.platform-card:nth-child(3) .metric-item:nth-child(3) .metric-progress { width: 33.33%; } /* 3 is max */
 
 /* Responsive design for platform cards */
 @media (max-width: 768px) {
@@ -2329,6 +2329,7 @@ button.loading i {
     font-size: 1.2rem;
   }
 }
+
 
 
 
