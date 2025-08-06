@@ -2330,6 +2330,17 @@ button.loading i {
   }
 }
 
+/* Fix nested bullet issue in activity-list */
+.activity-list ul {
+  list-style-type: disc;         /* Bring back normal bullets for sublists */
+  padding-left: 20px;            /* Indent properly */
+}
+
+.activity-list ul li::before {
+  content: none;                 /* Remove custom bullet from sub-items */
+}
+
+
 
 
 
