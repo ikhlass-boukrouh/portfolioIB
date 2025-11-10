@@ -331,8 +331,8 @@ h2::after {
   gap: 100px;
 }
 .home-content {
-  max-width: 8000px;
-  width: 120%;
+  max-width: 100%;
+  width: 100%;
 }
 
 .text-content {
@@ -341,7 +341,9 @@ h2::after {
 
 .image-content {
   flex: 1;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .image-content img {
@@ -381,7 +383,7 @@ h1 span {
   content: "";
   position: absolute;
   width: calc(100% + 8px);
-  height: 100%;
+  /* height: 100%; */
   border-left: 3px solid var(--text-color);
   animation: cursor 0.6s linear infinite;
 }
@@ -519,18 +521,16 @@ button:hover {
   margin-bottom: 10px;
   box-shadow: 0 3px 10px var(--shadow-color);
   transition: var(--transition);
-    color: var(--primary-color);
-
+  color: var(--primary-color);
 }
 
 .skill-category-summary:hover {
   background-color: var(--primary-light);
 }
-.toggle-details-updated{
+.toggle-details-updated {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
 .skill-details-container {
   display: none;
@@ -891,7 +891,6 @@ button:hover {
   font-size: 1rem;
   color: var(--text-light);
 }
-
 
 .course-status {
   display: inline-block;
@@ -1410,7 +1409,7 @@ footer {
 /* Responsive Design */
 @media (max-width: 992px) {
   .home-content {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .contact-wrapper {
@@ -1493,7 +1492,6 @@ footer {
   .courses-icon {
     font-size: 3rem;
   }
-  
 }
 
 .image-blur-box {
@@ -1515,7 +1513,6 @@ footer {
 }
 
 .download-btn {
-
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1536,8 +1533,6 @@ footer {
 .download-btn:hover {
   background-color: #ddd;
 }
-
-
 
 .research-grid {
   display: flex;
@@ -1661,7 +1656,7 @@ footer {
   transition: var(--transition);
   text-align: start;
 }
-.statistical-analysis-toggle > div >h3{
+.statistical-analysis-toggle > div > h3 {
   text-align: start !important;
 }
 .conferences-summary:hover {
@@ -2289,26 +2284,44 @@ button.loading i {
 
 /* Specific widths for each metric based on relative values */
 /* Scopus bars */
-.platform-card:nth-child(1) .metric-item:nth-child(1) .metric-progress { width: 69%; } /* 18/26 */
-.platform-card:nth-child(1) .metric-item:nth-child(2) .metric-progress { width: 30%; } /* 14/46 */
-.platform-card:nth-child(1) .metric-item:nth-child(3) .metric-progress { width: 66.66%; } /* 2/3 */
+.platform-card:nth-child(1) .metric-item:nth-child(1) .metric-progress {
+  width: 69%;
+} /* 18/26 */
+.platform-card:nth-child(1) .metric-item:nth-child(2) .metric-progress {
+  width: 30%;
+} /* 14/46 */
+.platform-card:nth-child(1) .metric-item:nth-child(3) .metric-progress {
+  width: 66.66%;
+} /* 2/3 */
 
 /* Google Scholar bars */
-.platform-card:nth-child(2) .metric-item:nth-child(1) .metric-progress { width: 96%; } /* 25/ 26 */
-.platform-card:nth-child(2) .metric-item:nth-child(2) .metric-progress { width: 100%; } /* 46 is max */
-.platform-card:nth-child(2) .metric-item:nth-child(3) .metric-progress { width: 100%; } /* 3 is max */
+.platform-card:nth-child(2) .metric-item:nth-child(1) .metric-progress {
+  width: 96%;
+} /* 25/ 26 */
+.platform-card:nth-child(2) .metric-item:nth-child(2) .metric-progress {
+  width: 100%;
+} /* 46 is max */
+.platform-card:nth-child(2) .metric-item:nth-child(3) .metric-progress {
+  width: 100%;
+} /* 3 is max */
 
 /* ResearchGate bars */
-.platform-card:nth-child(3) .metric-item:nth-child(1) .metric-progress { width: 100%; } /* 26 is max */
-.platform-card:nth-child(3) .metric-item:nth-child(2) .metric-progress { width: 73.91%; } /* 34/46 */
-.platform-card:nth-child(3) .metric-item:nth-child(3) .metric-progress { width: 100%; } /* 3 is max */
+.platform-card:nth-child(3) .metric-item:nth-child(1) .metric-progress {
+  width: 100%;
+} /* 26 is max */
+.platform-card:nth-child(3) .metric-item:nth-child(2) .metric-progress {
+  width: 73.91%;
+} /* 34/46 */
+.platform-card:nth-child(3) .metric-item:nth-child(3) .metric-progress {
+  width: 100%;
+} /* 3 is max */
 
 /* Responsive design for platform cards */
 @media (max-width: 768px) {
   .impact-platforms {
     flex-direction: column;
   }
-  
+
   .platform-card {
     min-width: auto;
   }
@@ -2320,18 +2333,12 @@ button.loading i {
     text-align: center;
     gap: 10px;
   }
-  
+
   .metric-item {
     padding: 4px 0;
   }
-  
+
   .metric-value {
     font-size: 1.2rem;
   }
 }
-
-
-
-
-
-

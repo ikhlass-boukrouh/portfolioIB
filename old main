@@ -1,0 +1,49 @@
+ <section id="home-section" class="section active">
+
+      <div class="container">
+        <div class="home-content">
+
+          <div class="text-content">
+            <h1 id="greeting">Hey I'm <span>Dr. Ikhlass BOUKROUH</span></h1>
+            <div class="typewriter" id="role-text">I'm a <span></span></div>
+            <p id="bio-text" style="text-align: justify">
+              Postdoctoral researcher in Data Science, holding a PhD in Artificial Intelligence.I teach at multiple
+              academic levels and lead workshops to help students build strong practical skills. I develop innovative
+              hybrid algorithms and contribute actively to the scientific community through international publications,
+              peer reviews, and research supervision.
+            </p>
+            <div class="social-links">
+
+
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/ikhlass-boukrouh " target="_blank" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+
+              <!-- ResearchGate -->
+              <a href="https://www.researchgate.net/profile/Ikhlass-Boukrouh" target="_blank" aria-label="ResearchGate">
+                <i class="fa-brands fa-researchgate"></i>
+              </a>
+
+              <!-- ORCID -->
+              <a href="https://orcid.org/0009-0009-6745-9207" target="_blank" aria-label="ORCID">
+                <i class="fa-brands fa-orcid"></i>
+              </a>
+
+              <!-- Google Scholar -->
+              <a href="https://scholar.google.com/citations?user=5-9t3DMAAAAJ&hl=fr&oi=sra" target="_blank"
+                aria-label="Google Scholar">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </a>
+            </div>
+
+
+          </div>
+          <div class="image-content">
+            <div class="image-blur-box">
+              <img src="cv-background.jpg" alt="Blurred CV Image" class="blurred-image" />
+              <a href="CV_Ikhlass_BOUKROUH.pdf" download class="download-btn">Download CV</a>
+            </div>
+          </div>
+        </div>
+    </section>
